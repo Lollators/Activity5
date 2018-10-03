@@ -5,7 +5,7 @@ public class VehicleChassis implements Chassis {
 
   //A public default constructor and an overloaded constructor with the following value:
   public VehicleChassis() {
-    chassisName = chassis;
+    chassisName = Chassis.chassis;
   }
 
   //an overloaded constructor with the following value:
