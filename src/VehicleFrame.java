@@ -1,36 +1,27 @@
-public class VehicleChassis implements Chassis {
+public class VehicleFrame implements Chassis{
 
-  //Create a String named chassisName instance variable.
-  private String chassisName;
+  private String vehicleFrameType;
 
-  //A public default constructor and an overloaded constructor with the following value:
-  public VehicleChassis() {
-    chassisName = Chassis.chassis;
+  public VehicleFrame(){
+    vehicleFrameType = "Unibody";
   }
 
-  //an overloaded constructor with the following value:
-  //String with a parameter value of chassisName
-  public VehicleChassis(String chassisName) {
-    this.chassisName = chassisName;
+  public VehicleFrame(String vehicleFrameType){
+    this.vehicleFrameType = vehicleFrameType;
   }
 
-  //  A public method named getChassisType that doesn't
-  //  have a formal parameter and that returns an instance
-  //  of the interface Chassis (hint that would be a copy of this class).
   public Chassis getChassisType() {
     return this;
   }
 
-  //  A public method setChassisType that takes a String parameter vehicleChassis and that returns a void. It
-  //  should set the instance variable chassisName.
-  public void setChassisType(String vehicleChassis) {
-    chassisName = vehicleChassis;
+  public void setChassisType(String vehicleFrameType) {
+    this.vehicleFrameType = vehicleFrameType;
   }
 
-  //  A public toString method that returns the following:
-  //  Chassis Name  : Chassis
-  public String toString() {
-    return "Chassis Name  :  " + chassisName;
+  public String toString(){
+    String message = "";
+    message += "Chassis              : " + Chassis.chassis + '\n';
+    message += "Vehicle Frame        : " + vehicleFrameType + '\n';
+    return message;
   }
-
 }
