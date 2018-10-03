@@ -30,7 +30,7 @@ public class VehicleChassis implements Chassis {
   //  A public toString method that returns the following:
   //  Chassis Name  : Chassis
   public String toString() {
-    return "Chassis Name  :  " + chassisName;
+    return "Chassis Name  :  " + chassisName + '\n';
   }
 
 }
